@@ -1,0 +1,29 @@
+body {
+  backgournd-color : gray;
+}
+
+#calculator {
+  overflow : auto;
+  background-color : pink;
+  width : 350px;
+  height: 450px;
+  margin : auto;
+  border-radius : 10px;
+  box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: inset -8px -5px 8px 10px rgba(0, 0, 0, 0.05), 4px 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border : 5px solid;
+  border-color : white;
+}
+
+#display {
+  background-color: white;
+  border-radius : 5px;
+  border : 2px solid;
+  border-color : #FFB6C1;
+  font-size : 30px;
+  width : 300px;
+  height : 50px;
+  margin : auto;
+  margin-top: 10px;
+  text-align : right
+}
