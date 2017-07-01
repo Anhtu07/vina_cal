@@ -1,18 +1,21 @@
 body {
   backgournd-color : gray;
+  font-family: 'Teko', san-serif;
 }
 
 #calculator {
   overflow : auto;
   background-color : pink;
   width : 350px;
-  height: 450px;
+  height: 480px;
   margin : auto;
+  margin-top : 50px;
   border-radius : 10px;
   box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: inset -8px -5px 8px 10px rgba(0, 0, 0, 0.05), 4px 6px 20px 0 rgba(0, 0, 0, 0.4);
   border : 5px solid;
   border-color : white;
+  text-align : center;
 }
 
 #display {
@@ -20,10 +23,48 @@ body {
   border-radius : 5px;
   border : 2px solid;
   border-color : #FFB6C1;
-  font-size : 30px;
+  color : #663300;
+  font-size : 38px;
   width : 300px;
-  height : 50px;
+  height : 70px;
   margin : auto;
-  margin-top: 10px;
+  margin-top : 5px;
   text-align : right
+}
+
+#name {
+  height : 30px;
+  margin : auto;
+  color : #cc0000;
+  font-size : 25px;
+  font-family: 'Sigmar One', cursive;
+}
+
+#buttons {
+  text-align : left;
+  margin-left : 25px;
+  margin-top : 2px;
+}
+
+.button {
+  color : #cc0000;
+  font-family: 'Sigmar One', cursive;
+  background-color : white;
+  width : 60px;
+  height : 50px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
+  margin-right : 17px;
+  margin-top : 17px;
+}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }
