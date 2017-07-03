@@ -1,5 +1,4 @@
 body {
-  backgournd-color : gray;
   font-family: 'Teko', san-serif;
 }
 
@@ -12,13 +11,14 @@ body {
   margin-top : 50px;
   border-radius : 10px;
   box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: inset -8px -5px 8px 10px rgba(0, 0, 0, 0.05), 4px 6px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset -8px -5px 8px 10px rgba(0, 0, 0, 0.05), 4px 6px 20px 10px rgba(0, 0, 0, 0.4);
   border : 5px solid;
   border-color : white;
   text-align : center;
 }
 
 #display {
+  padding : 0px 10px;
   background-color: white;
   border-radius : 5px;
   border : 2px solid;
@@ -29,7 +29,8 @@ body {
   height : 70px;
   margin : auto;
   margin-top : 5px;
-  text-align : right
+  text-align : right;
+  box-shadow: inset 3px 2px 8px 3px rgba(0, 0, 0, 0.05), 1px 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 #name {
@@ -46,7 +47,7 @@ body {
   margin-top : 2px;
 }
 
-.button {
+button {
   color : #cc0000;
   font-family: 'Sigmar One', cursive;
   background-color : white;
@@ -63,7 +64,7 @@ body {
   margin-top : 17px;
 }
 
-.button:active {
+button:active {
   background-color: white;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
