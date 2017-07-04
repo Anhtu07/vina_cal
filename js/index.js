@@ -1,4 +1,13 @@
 var number_of_digits = 0;
+var prev_value;
+var current_value;
+var op;
+function clear() {
+  number_of_digits = 0;
+  op = undefined;
+  $("#display").html("");
+}
+
 $("button").click(function() {
   if (!isNaN(this.id) && (number_of_digits <= 20)) {
     var current = $("#display").html();
@@ -6,13 +15,37 @@ $("button").click(function() {
     $("#display").html(current);
     number_of_digits++;
   } else if (this.id === "clear") {
-    $("#display").html("");
-    number_of_digits = 0;
+    clear();
   } else if (this.id === "delete") {
     var current = $("#display").html();
     current = current.substring(0, current.length - 1);
     number_of_digits --;
     $("#display").html(current);
+  } else if(this.id === "decimal") {
+    var current = $("#display").html();
+    current += ".";
+    $("#display").html(current);
+  } else if (this.id === "equal") {
+    if(prev_value !== undefined) {
+      var result;
+      current_value = parseFloat($("#display").html());
+      if(op === "plus") {
+        result = prev_value + current_value;
+      } else if(op === "minus") {
+        result = prev_value - current_value;
+      } else if(op === "times") {
+        result = prev_value * current_value;
+      } else if (op === "divide") {
+        result = prev_value / current_value;
+      }
+      $("#display").html(result);
+    }
   }
-  console.log(number_of_digits);
 });
+
+$(".op").click(function () {
+  prev_value = parseFloat($("#display").html());
+  clear();
+  op = this.id;
+  console.log(prev_value);
+})
