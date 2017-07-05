@@ -5,7 +5,7 @@ body {
 #calculator {
   overflow : auto;
   background-color : pink;
-  width : 350px;
+  width : 355px;
   height: 480px;
   margin : auto;
   margin-top : 50px;
@@ -34,22 +34,23 @@ body {
 }
 
 #name {
+  font-family: 'Chango', cursive;
   height : 30px;
   margin : auto;
   color : #cc0000;
   font-size : 25px;
-  font-family: 'Sigmar One', cursive;
 }
 
 #buttons {
+  font-family: 'Chango', cursive;
   text-align : left;
   margin-left : 25px;
   margin-top : 2px;
 }
 
 button {
+  font-family: 'Chango', cursive;
   color : #cc0000;
-  font-family: 'Sigmar One', cursive;
   background-color : white;
   width : 60px;
   height : 50px;
